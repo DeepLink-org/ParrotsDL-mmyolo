@@ -204,7 +204,6 @@ optim_wrapper = dict(
     type='OptimWrapper',
     #type='AmpOptimWrapper',
     #loss_scale=dict(init_scale=2**13., growth_interval=300),
-
     optimizer=dict(
         type='SGD',
         lr=base_lr,
@@ -246,7 +245,6 @@ test_evaluator = val_evaluator
 train_cfg = dict(
     type='EpochBasedTrainLoop',
     max_epochs=max_epochs,
-    #val_interval=1)
     val_interval=save_epoch_intervals)
 val_cfg = dict(type='ValLoop')
 test_cfg = dict(type='TestLoop')
