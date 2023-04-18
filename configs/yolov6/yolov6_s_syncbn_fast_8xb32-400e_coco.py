@@ -2,7 +2,7 @@ _base_ = '../_base_/default_runtime.py'
 
 # dataset settings
 #data_root = 'data/coco/'
-data_root = '/mnt/lustre/share/zhaoguochun/dataset/mscoco2017/'
+data_root = '/mnt/lustre/share/openmmlab/datasets/detection/coco/'
 dataset_type = 'YOLOv5CocoDataset'
 
 num_last_epochs = 15
