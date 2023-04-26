@@ -226,7 +226,7 @@ default_hooks = dict(
     checkpoint=dict(
         type='CheckpointHook',
         interval=save_epoch_intervals,
-        max_keep_ckpts=3,
+        max_keep_ckpts=50,
         save_best='auto'))
 
 custom_hooks = [
